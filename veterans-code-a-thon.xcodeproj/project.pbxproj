@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92518F2E21FCC973B5B8EDAF /* Pods_veterans_code_a_thon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EF34B1A849A0A7A8623F49 /* Pods_veterans_code_a_thon.framework */; };
 		B81AAC2426582E5B00E28DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AAC2326582E5B00E28DF9 /* AppDelegate.swift */; };
 		B81AAC2626582E5B00E28DF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AAC2526582E5B00E28DF9 /* SceneDelegate.swift */; };
 		B81AAC2826582E5B00E28DF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AAC2726582E5B00E28DF9 /* ContentView.swift */; };
@@ -14,9 +15,12 @@
 		B81AAC2D26582E5D00E28DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81AAC2C26582E5D00E28DF9 /* Assets.xcassets */; };
 		B81AAC3026582E5D00E28DF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81AAC2F26582E5D00E28DF9 /* Preview Assets.xcassets */; };
 		B81AAC3326582E5D00E28DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B81AAC3126582E5D00E28DF9 /* LaunchScreen.storyboard */; };
+		B81AAC3B26582EB600E28DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B81AAC3A26582EB600E28DF9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0403677036D13C3ECF812313 /* Pods-veterans-code-a-thon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veterans-code-a-thon.release.xcconfig"; path = "Target Support Files/Pods-veterans-code-a-thon/Pods-veterans-code-a-thon.release.xcconfig"; sourceTree = "<group>"; };
+		45BA4193AAFDC29B09DC0ECD /* Pods-veterans-code-a-thon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veterans-code-a-thon.debug.xcconfig"; path = "Target Support Files/Pods-veterans-code-a-thon/Pods-veterans-code-a-thon.debug.xcconfig"; sourceTree = "<group>"; };
 		B81AAC2026582E5B00E28DF9 /* veterans-code-a-thon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "veterans-code-a-thon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81AAC2326582E5B00E28DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B81AAC2526582E5B00E28DF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		B81AAC2F26582E5D00E28DF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B81AAC3226582E5D00E28DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B81AAC3426582E5D00E28DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B81AAC3A26582EB600E28DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2EF34B1A849A0A7A8623F49 /* Pods_veterans_code_a_thon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veterans_code_a_thon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92518F2E21FCC973B5B8EDAF /* Pods_veterans_code_a_thon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3051AA11D5A40D407BB1EA94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45BA4193AAFDC29B09DC0ECD /* Pods-veterans-code-a-thon.debug.xcconfig */,
+				0403677036D13C3ECF812313 /* Pods-veterans-code-a-thon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92C8384D6B2BE8FD7EF622AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2EF34B1A849A0A7A8623F49 /* Pods_veterans_code_a_thon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B81AAC1726582E5B00E28DF9 = {
 			isa = PBXGroup;
 			children = (
 				B81AAC2226582E5B00E28DF9 /* veterans-code-a-thon */,
 				B81AAC2126582E5B00E28DF9 /* Products */,
+				3051AA11D5A40D407BB1EA94 /* Pods */,
+				92C8384D6B2BE8FD7EF622AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +91,7 @@
 				B81AAC2C26582E5D00E28DF9 /* Assets.xcassets */,
 				B81AAC3126582E5D00E28DF9 /* LaunchScreen.storyboard */,
 				B81AAC3426582E5D00E28DF9 /* Info.plist */,
+				B81AAC3A26582EB600E28DF9 /* GoogleService-Info.plist */,
 				B81AAC2926582E5B00E28DF9 /* veterans_code_a_thon.xcdatamodeld */,
 				B81AAC2E26582E5D00E28DF9 /* Preview Content */,
 			);
@@ -85,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B81AAC3726582E5D00E28DF9 /* Build configuration list for PBXNativeTarget "veterans-code-a-thon" */;
 			buildPhases = (
+				4CF1E1796921F2D5ECFD1E5A /* [CP] Check Pods Manifest.lock */,
 				B81AAC1C26582E5B00E28DF9 /* Sources */,
 				B81AAC1D26582E5B00E28DF9 /* Frameworks */,
 				B81AAC1E26582E5B00E28DF9 /* Resources */,
+				4C457A0BB9EA6539124C15D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,12 +166,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81AAC3326582E5D00E28DF9 /* LaunchScreen.storyboard in Resources */,
+				B81AAC3B26582EB600E28DF9 /* GoogleService-Info.plist in Resources */,
 				B81AAC3026582E5D00E28DF9 /* Preview Assets.xcassets in Resources */,
 				B81AAC2D26582E5D00E28DF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C457A0BB9EA6539124C15D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veterans-code-a-thon/Pods-veterans-code-a-thon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veterans-code-a-thon/Pods-veterans-code-a-thon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-veterans-code-a-thon/Pods-veterans-code-a-thon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF1E1796921F2D5ECFD1E5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veterans-code-a-thon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81AAC1C26582E5B00E28DF9 /* Sources */ = {
@@ -287,6 +360,7 @@
 		};
 		B81AAC3826582E5D00E28DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45BA4193AAFDC29B09DC0ECD /* Pods-veterans-code-a-thon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +382,7 @@
 		};
 		B81AAC3926582E5D00E28DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0403677036D13C3ECF812313 /* Pods-veterans-code-a-thon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
