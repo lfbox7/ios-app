@@ -10,37 +10,26 @@ import Firebase
 import Foundation
 
 enum Category: String, CaseIterable, Codable, Hashable {
-    case aerospaceAndDefense
-    case agricultureAndForestry
-    case artsAndEntertainment
-    case automotive
-    case businessServices
-    case commercialContracting
+    case agricultureForestryFishingAndHunting
+    case mining
+    case utilities
     case construction
-    case educationAndTraining
-    case employmentServices
-    case energyAndUtilities
-    case engineeringServices
-    case environmentalServices
-    case financialServices
-    case foodAndDrink
-    case government
-    case healthMedicalAndDental
-    case insuranceServices
-    case internetServices
-    case legalServices
-    case lodgingAndTravel
     case manufacturing
-    case marketingAndSales
-    case miscellaneous
-    case nonprofitAndFreeHelp
-    case publishingAndPrinting
-    case realEstateServices
-    case residentialServices
-    case securityAndSafety
-    case storesAndDealers
-    case technology
-    case transportationServices
+    case wholesaleTrade
+    case retailTrade
+    case transportationAndWarehousing
+    case information
+    case financeAndInsurance
+    case realEstateRentalAndLeasing
+    case professionalScientificAndTechnicalServices
+    case managementOfCompaniesAndEnterprises
+    case AdministrativeAndSupportAndWasteManagementAndRemediationServices
+    case EducationalServices
+    case HealthCareAndSocialAssistance
+    case artsEntertainmentAndRecreation
+    case accommodationAndFoodServices
+    case otherServices
+    case publicAdministration
 }
 
 struct Business: Identifiable, Hashable {
