@@ -3,6 +3,7 @@
 //  veterans-code-a-thon
 //
 //  Created by Leonard Box on 5/21/21.
+//  Copyright © 2021 Leonard Box. All rights reserved.
 //
 
 import SwiftUI
@@ -19,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(categories.keys.sorted(), id: \String.self) { key in
-                CategoryHomeRowView(categoryName: "\(key) Category".uppercased(), parks: self.categories[key]!)
+                CategoryHomeRowView(categoryName: "\(key) Category".uppercased())
                     .frame(height: 320)
                     .padding(.top)
                     .padding(.bottom)
@@ -38,11 +39,5 @@ struct ContentView: View {
                 }
             )
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

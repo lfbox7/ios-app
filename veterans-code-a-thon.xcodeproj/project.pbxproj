@@ -57,6 +57,8 @@
 		B81AAC422658487C00E28DF9 /* BusinessListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListener.swift; sourceTree = "<group>"; };
 		B81AAC4426584A6C00E28DF9 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		B81AAC4626584AC700E28DF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B8A5101B2659D80400E2BFC5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B8A5101C2659D80400E2BFC5 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		C2EF34B1A849A0A7A8623F49 /* Pods_veterans_code_a_thon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veterans_code_a_thon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		B81AAC3D265845CD00E28DF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B8A5101A2659D80400E2BFC5 /* Maps */,
 				B8045F1126598DD30098AEED /* BusinessListView.swift */,
 				B81AAC2726582E5B00E28DF9 /* ContentView.swift */,
 				B8045F0E26598BCD0098AEED /* Supporting Views */,
@@ -182,6 +185,15 @@
 				B81AAC4626584AC700E28DF9 /* Constants.swift */,
 			);
 			path = Sessions;
+			sourceTree = "<group>";
+		};
+		B8A5101A2659D80400E2BFC5 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B8A5101B2659D80400E2BFC5 /* MapView.swift */,
+				B8A5101C2659D80400E2BFC5 /* DirectionsView.swift */,
+			);
+			path = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

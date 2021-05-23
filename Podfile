@@ -15,5 +15,6 @@ target 'veterans-code-a-thon' do
   pod 'Firebase/Functions'
   pod 'FirebaseFirestoreSwift'
   pod 'GeoFire', '~> 4.0'
+  pod 'SDWebImageSwiftUI', '~>2.0'
 
 end

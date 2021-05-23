@@ -1,9 +1,9 @@
 //
 //  MapViewModel.swift
-//  SAParkFinder
+//  veterans-code-a-thon
 //
-//  Created by Leonard Box on 4/27/20.
-//  Copyright © 2020 Leonard Box. All rights reserved.
+//  Created by Leonard Box on 5/22/21.
+//  Copyright © 2021 Leonard Box. All rights reserved.
 //
 
 import SwiftUI
@@ -13,20 +13,28 @@ import CoreLocation
 
 class MapViewModel: ObservableObject {
     @ObservedObject var locationViewModel = LocationViewModel()
-    var business: Business
+    var businesses: Business
     
-    init(business: Business) {
+    init(businesses: Business) {
         self.businesses = businesses
         findDistance()
     }
     
     func findDistance() -> CLLocationDistance {
         let homeCoordinate = CLLocation(latitude: locationViewModel.currentLatitude, longitude: locationViewModel.currentLongitude)
+        let geoCoder = CLGeocoder()
+        var lat: CLLocationDegrees = locationViewModel.currentLatitude
+        var lon: CLLocationDegrees = locationViewModel.currentLongitude
         
-        //let parkCoordinate = CLLocation(latitude: parks.latitude, longitude: parks.longitude)
-        // need to do this my address
+        geoCoder.geocodeAddressString(businesses.address) { placemarks, error in
+            let placemark = placemarks?.first
+            lat = (placemark?.location?.coordinate.latitude)!
+            lon = (placemark?.location?.coordinate.longitude)!
+        }
         
-        let distance = homeCoordinate.distance(from: parkCoordinate) * 0.000621371
+        let businessCoordinate = CLLocation(latitude: lat, longitude: lon)
+        
+        let distance = homeCoordinate.distance(from: businessCoordinate) * 0.000621371
         
         return distance
     }

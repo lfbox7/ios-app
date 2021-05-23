@@ -1,9 +1,9 @@
 //
-//  ParkListRowView.swift
-//  SAParkFinder
+//  BusinessListRowView.swift
+//  veterans-code-a-thon
 //
-//  Created by Leonard Box on 4/25/20.
-//  Copyright © 2020 Leonard Box. All rights reserved.
+//  Created by Leonard Box on 5/22/21.
+//  Copyright © 2021 Leonard Box. All rights reserved.
 //
 
 import SwiftUI

@@ -2,7 +2,8 @@
 //  BusinessListener.swift
 //  veterans-code-a-thon
 //
-//  Created by Leonard Box on 5/21/21.
+//  Created by Leonard Box on 5/22/21.
+//  Copyright © 2021 Leonard Box. All rights reserved.
 //
 
 import Foundation
@@ -30,7 +31,11 @@ class BusinessListener: ObservableObject {
         for snapshot in snapshot.documents {
             let businessData = snapshot.data()
             allBusinesses.append(Business(id: businessData[kID] as? String ?? UUID().uuidString,
-                                          businessType: Category(rawValue: businessData[kBUSINESSTYPE] as? String ?? "miscellaneous") ?? .miscellaneous
+                                          businessType: Category(rawValue: businessData[kBUSINESSTYPE] as? String ?? "Other Services") ?? .otherServices,
+                                          image: businessData[kBUSINESSIMAGE] as? String ?? "Unknown",
+                                          name:businessData[kBUSINESSNAME] as? String ?? "Unknown",
+                                          address:businessData[kBUSINESSADDRESS] as? String ?? "Unknown"
+                                          
             ))
         }
         return allBusinesses
