@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct BusinessListView: View {
+    @ObservedObject private var businessListener = BusinessListener()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct BusinessListView_Previews: PreviewProvider {
-    static var previews: some View {
-        BusinessListView()
+        List {
+            ForEach(businessListener.businesses) { business in
+                NavigationLink(
+                    destination: BusinessDetailView(business: business)
+                        .environmentObject(self.businessListener)
+                ) {
+                    BusinessListRowView(business: business)
+                }
+            }
+            .navigationBarTitle(Text("Businesses"), displayMode: .inline)
+        }
     }
 }
