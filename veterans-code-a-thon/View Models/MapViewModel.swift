@@ -25,8 +25,9 @@ class MapViewModel: ObservableObject {
         let geoCoder = CLGeocoder()
         var lat: CLLocationDegrees = locationViewModel.currentLatitude
         var lon: CLLocationDegrees = locationViewModel.currentLongitude
+        let address = businesses.address1 + " " + businesses.city + ", " + businesses.state
         
-        geoCoder.geocodeAddressString(businesses.address) { placemarks, error in
+        geoCoder.geocodeAddressString(address) { placemarks, error in
             let placemark = placemarks?.first
             lat = (placemark?.location?.coordinate.latitude)!
             lon = (placemark?.location?.coordinate.longitude)!

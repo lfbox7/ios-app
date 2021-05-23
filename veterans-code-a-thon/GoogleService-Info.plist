@@ -19,15 +19,17 @@
 	<key>STORAGE_BUCKET</key>
 	<string>stars-challenge-83dfe.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
+	<key>DATABASE_URL</key>
+	<string>https://stars-challenge-83dfe-default-rtdb.firebaseio.com</string>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:528725200474:ios:8ae2a4f41a306e2bfe5263</string>
 </dict>

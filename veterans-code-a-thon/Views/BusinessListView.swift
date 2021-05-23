@@ -13,12 +13,18 @@ struct BusinessListView: View {
     
     var body: some View {
         List {
+            Toggle(isOn: $businessListener.showFeaturedOnly) {
+                Text("Show Disabled Only")
+            }
+            
             ForEach(businessListener.businesses) { business in
-                NavigationLink(
-                    destination: BusinessDetailView(business: business)
-                        .environmentObject(self.businessListener)
-                ) {
-                    BusinessListRowView(business: business)
+                if !self.businessListener.showFeaturedOnly || business.disabled {
+                    NavigationLink(
+                        destination: BusinessDetailView(business: business)
+                            .environmentObject(self.businessListener)
+                    ) {
+                        BusinessListRowView(business: business)
+                    }
                 }
             }
             .navigationBarTitle(Text("Businesses"), displayMode: .inline)

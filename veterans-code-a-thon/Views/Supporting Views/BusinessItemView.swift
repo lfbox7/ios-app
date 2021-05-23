@@ -26,7 +26,10 @@ struct BusinessItemView: View {
                 Text(business.name)
                     .foregroundColor(.primary)
                     .font(.headline)
-                Text(business.address)
+                Text(business.address1)
+                    .foregroundColor(.secondary)
+                    .font(.subheadline)
+                Text(business.address2)
                     .foregroundColor(.secondary)
                     .font(.subheadline)
             }

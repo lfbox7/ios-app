@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 
 class BusinessListener: ObservableObject {
+    @Published var showFeaturedOnly = false
     @Published var businesses: [Business] = []
     
     init() {

@@ -30,6 +30,7 @@
 		B81AAC4526584A6C00E28DF9 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AAC4426584A6C00E28DF9 /* FirebaseReference.swift */; };
 		B81AAC4726584AC700E28DF9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81AAC4626584AC700E28DF9 /* Constants.swift */; };
 		B877F96C265AA8ED00249A57 /* BusinessDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B877F96B265AA8ED00249A57 /* BusinessDetailView.swift */; };
+		B877F96E265AE8E300249A57 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B877F96D265AE8E300249A57 /* SessionStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		B81AAC4426584A6C00E28DF9 /* FirebaseReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		B81AAC4626584AC700E28DF9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B877F96B265AA8ED00249A57 /* BusinessDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailView.swift; sourceTree = "<group>"; };
+		B877F96D265AE8E300249A57 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		B8A5101B2659D80400E2BFC5 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		B8A5101C2659D80400E2BFC5 /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
 		C2EF34B1A849A0A7A8623F49 /* Pods_veterans_code_a_thon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veterans_code_a_thon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 				B81AAC422658487C00E28DF9 /* BusinessListener.swift */,
 				B81AAC4426584A6C00E28DF9 /* FirebaseReference.swift */,
 				B81AAC4626584AC700E28DF9 /* Constants.swift */,
+				B877F96D265AE8E300249A57 /* SessionStore.swift */,
 			);
 			path = Sessions;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				B81AAC402658465E00E28DF9 /* Businesses.swift in Sources */,
 				B81AAC2826582E5B00E28DF9 /* ContentView.swift in Sources */,
 				B877F96C265AA8ED00249A57 /* BusinessDetailView.swift in Sources */,
+				B877F96E265AE8E300249A57 /* SessionStore.swift in Sources */,
 				B81AAC4726584AC700E28DF9 /* Constants.swift in Sources */,
 				B8045F21265992730098AEED /* MapDetailView.swift in Sources */,
 				B8045F23265992730098AEED /* CategoryHomeRowView.swift in Sources */,
